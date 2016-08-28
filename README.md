@@ -186,6 +186,9 @@ Frequently Asked Questions (FAQ)
 <a name="FAQ39"></a>
 [**(39) How does a VPN based firewall differ from a iptables based firewall?**](https://github.com/M66B/NetGuard/blob/master/FAQ.md#FAQ39)
 
+<a name="FAQ40"></a>
+[**(40) Can you add schedules?**](https://github.com/M66B/NetGuard/blob/master/FAQ.md#FAQ40)
+
 Permissions
 -----------
 

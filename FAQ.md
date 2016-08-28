@@ -157,9 +157,10 @@ NetGuard requires at least Android 4.0, so it is not available in the Google Pla
 **(19) Why does application XYZ still have internet access?**
 
 If you block internet access for an application, there is no way around it.
-However, applications could access the internet through other applications.
-Google Play services is handling push messages for most applications for example.
+However, applications could access the internet through other (system) applications.
+Google Play services is handling incoming push messages for most applications for example.
 You can prevent this by blocking internet access for the other application as well.
+This can best be diagnosed by checking the global access log (three dot menu, Show log).
 
 Note that some applications keep trying to access the internet, which is done by sending a connection request packet.
 This packet goes into the VPN sinkhole when internet access for the application is blocked.
@@ -317,9 +318,9 @@ however they need to be generally usable to be included.
 As a workaround you can use the export/import function to apply specific settings in specific circumstances.
 
 <a name="FAQ34"></a>
-**(34) Can you add the condition 'when on foreground'?**
+**(34) Can you add a condition 'when on foreground' or 'when active'?**
 
-Recent Android versions do not allow an application to query if other applications are in the foreground or background
+Recent Android versions do not allow an application to query if other applications are in the foreground/background or active/inactive
 without holding an [additional privacy violating permission](https://developer.android.com/reference/android/Manifest.permission.html#PACKAGE_USAGE_STATS)
 and at the expense of extra battery usage (because periodic polling is required) anymore,
 so this cannot be added without significant disadvantages.
@@ -367,11 +368,19 @@ See [here](http://forum.xda-developers.com/showpost.php?p=67892427&postcount=303
 On most devices, NetGuard will keep running in the background with its foreground service.
 On some devices (in particular some Samsung models), where there are lots of applications competing for memory, Android may still stop NetGuard as a last resort.
 Unfortunately this cannot be fixed from NetGuard, and can be considered a shortcoming of the device and/or as a bug in Android.
+You can workaround this problem by enabling the watchdog in the NetGuard advanced options to check every 10-15 minutes.
 
 <a name="FAQ39"></a>
 **(39) How does a VPN based firewall differ from a iptables based firewall?**
 
 See this [Stack Exchange question](http://android.stackexchange.com/questions/152087/any-security-difference-between-root-based-firewall-afwall-and-non-root-based).
+
+<a name="FAQ40"></a>
+**(40) Can you add schedules?**
+
+Besides not being trivial to add, schedule are in my opion not a good idea, since time is not a good rule condition.
+A rule condition like *When screen is on* is a better and more straightforward condition.
+Therefore schedules will not be added, but you are welcome to propose other new conditions.
 
 <br />
 
