@@ -382,6 +382,34 @@ Besides not being trivial to add, schedule are in my opion not a good idea, sinc
 A rule condition like *When screen is on* is a better and more straightforward condition.
 Therefore schedules will not be added, but you are welcome to propose other new conditions.
 
+<a name="FAQ41"></a>
+**(41) Can you add wildcards?**
+
+Wildcards to allow/block addresses would have a significant performance and usability impact and will therefore not be added.
+
+<a name="FAQ42"></a>
+**(42) Why is permission ... needed?**
+
+* INTERNET ('*Full network access*'): to forward allowed (filtered) traffic to the internet
+* ACCESS_NETWORK_STATE ('*View network connections*'): to check if the device is connected to the internet through Wi-Fi
+* READ_PHONE_STATE ('*Device ID & call information*'): to detect mobile network changes, see [here](http://forum.xda-developers.com/showpost.php?p=64107371&postcount=489) for more details
+* ACCESS_WIFI_STATE ('*Wi-Fi connection information*'): to detect Wi-Fi network changes
+* RECEIVE_BOOT_COMPLETED ('*Run at startup*'): to start the firewall when booting the device
+* WAKE_LOCK ('*Prevent device from sleeping*'): to reliably reload rules in the background on connectivity changes
+* READ/WRITE_EXTERNAL_STORAGE ('*Photos/Media/Files*'): to export/import settings on Android versions before 4.4 (KitKat) (there is no need to grant this permission on later Android versions)
+* VIBRATE: to give feedback on widget tap
+* BILLING: to use in-app billing
+
+<a name="FAQ43"></a>
+**(43) I get 'This app is causing your device to run slowly'**
+
+This message is displayed by the *Smart Manager*,
+but actually it is the 'Smart' Manager application itself which is causing delays and lags.
+Some links:
+
+* [Smart Manager complaining about LastPass](https://www.reddit.com/r/GalaxyS6/comments/3htu2y/smart_manager_cmoplaining_about_lastpass/)
+* [Disable Smart Manager?](http://forums.androidcentral.com/samsung-galaxy-s4/595483-disable-smart-manager.html)
+
 <br />
 
 **If you didn't find the answer to your question, you can ask your questions [in this forum](http://forum.xda-developers.com/showthread.php?t=3233012) or contact me directly [by e-mail](mailto:marcel+netguard@faircode.eu)**.

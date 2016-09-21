@@ -82,11 +82,11 @@ Buna rağmen bazı cihazlarda çalışmayabilir.
   <string name="setting_vpn4">VPN IPv4: %s</string>
   <string name="setting_vpn6">VPN IPv6: %s</string>
   <string name="setting_dns">VPN DNS: %s</string>
-  <string name="setting_socks5_enabled">Use SOCKS5 proxy</string>
-  <string name="setting_socks5_addr">SOCKS5 address: %s</string>
-  <string name="setting_socks5_port">SOCKS5 port: %s</string>
-  <string name="setting_socks5_username">SOCKS5 username: %s</string>
-  <string name="setting_socks5_password">SOCKS5 password: %s</string>
+  <string name="setting_socks5_enabled">SOCKS5 proxy kullan</string>
+  <string name="setting_socks5_addr">SOCKS5 adresi: %s</string>
+  <string name="setting_socks5_port">SOCKS5 bağlantı noktası: %s</string>
+  <string name="setting_socks5_username">SOCKS5 kullanıcı adı: %s</string>
+  <string name="setting_socks5_password">SOCKS5 şifre: %s</string>
   <string name="setting_pcap_record_size">PCAP kayıt boyutu: %s B</string>
   <string name="setting_pcap_file_size">PCAP max. dosya boyutu: %s MB</string>
   <string name="setting_watchdog">Watchdog: every %s minutes</string>
@@ -160,6 +160,7 @@ Bu nedenle, bir sonraki iletişim kutusunda VPN bağlantı isteğine onay vermen
   <string name="msg_datasaving">For consistent results, the Android data saving options should be disabled for NetGuard
 \n\nIn the next dialog, enable the options \"Background data\" and \"Unrestricted data usage\"</string>
   <string name="msg_filter">NetGuard filtreleme kullanımı Android için veri ve güç kullanımında karmaşaya neden oluyormuş gibi görünebilir. Bazı durumlarda görünmeklede kalmaz</string>
+  <string name="msg_filter4">Android 4 requires filtering to be enabled</string>
   <string name="msg_log_disabled">Trafik günlüğünü etkinleştirmek için yukardaki anahtarı kullanın. Trafik günlüğünü etkinleştirmek ekstra batarya kullanımına neden olabilir.</string>
   <string name="msg_clear_rules">Bu, kuralları ve koşulları varsayılan değerle sıfırlar</string>
   <string name="msg_reset_access">Bu, izin verilen yada engelenen günlük kayıtları haricindeki erişim denemeleri ile ilgili satırları siler</string>
